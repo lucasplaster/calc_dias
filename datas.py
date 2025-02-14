@@ -1,6 +1,10 @@
 import streamlit as st
 from datetime import datetime, timedelta
 from datetime import date
+import locale
+
+
+locale.setlocale(locale.LC_ALL, "")
 
 def diferenca_em_anos(data1, data2):
     diferenca_anos = data1.year - data2.year
